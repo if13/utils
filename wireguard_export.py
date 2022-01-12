@@ -45,7 +45,7 @@ if __name__ == "__main__":
 		'PublicKey': '',
 		'PresharedKey': f'{sharkey}',
 		'AllowedIPs': '172.26.1.0/24, 192.9.200.0/24, 192.168.11.0/24',
-		'Endpoint': '188.254.40.11:51820'}
+		'Endpoint': 'xx.xx.xx.xx:xxxxx'}
 
 		name_config = input('введите дескрипшн конфига: ')
 
