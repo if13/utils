@@ -36,16 +36,16 @@ if __name__ == "__main__":
 		(privkey, pubkey, sharkey) = generate_wireguard_keys()
 		config = configparser.ConfigParser()
 		config['Interface'] = {'PrivateKey': privkey,
-							'ListenPort': '51820',
+							'ListenPort': '', #insert
 							'Address':  f'172.26.1.{cur_ip}',
 							'DNS': '192.9.200.124, 192.9.200.132',
 							'#pubkey': f'{pubkey}'}
 
 		config['Peer'] = {
-		'PublicKey': '',
+		'PublicKey': '', #insert
 		'PresharedKey': f'{sharkey}',
 		'AllowedIPs': '172.26.1.0/24, 192.9.200.0/24, 192.168.11.0/24',
-		'Endpoint': 'xx.xx.xx.xx:xxxxx'}
+		'Endpoint': 'xx.xx.xx.xx:xxxxx' } #insert
 
 		name_config = input('введите дескрипшн конфига: ')
 
