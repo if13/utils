@@ -36,6 +36,8 @@ def all_in_it_without_dupl(first, last):
         first_list.remove(to_check)
         last_list.remove(to_check)
     
+    return True
+    
 print('\nРезультат задачи 2 (с учетом повторений)')
 print(all_in_it_without_dupl(b, a)) # b не является подмножеством с, с учетом повторяющихся значений
 
